@@ -1,0 +1,571 @@
+{
+  "projectName": "SentraAPI Landing Page",
+  "description": "A modern, professional landing page for SentraAPI - an API monitoring service that conveys reliability, speed, and technical sophistication",
+  
+  "designSystem": {
+    "colors": {
+      "background": {
+        "primary": "#0e0e0f",
+        "secondary": "#131314",
+        "tertiary": "#0f0f10",
+        "card": "rgba(255, 255, 255, 0.05)",
+        "cardHover": "rgba(255, 255, 255, 0.08)"
+      },
+      "text": {
+        "primary": "#ffffff",
+        "secondary": "#a1a1aa",
+        "muted": "#71717a"
+      },
+      "accent": {
+        "primary": "#2563eb",
+        "primaryHover": "#1d4ed8",
+        "success": "#10b981",
+        "error": "#ef4444",
+        "warning": "#f59e0b"
+      },
+      "border": {
+        "default": "rgba(255, 255, 255, 0.1)",
+        "focus": "#2563eb"
+      }
+    },
+    
+    "typography": {
+      "fontFamily": {
+        "primary": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+      },
+      "fontSize": {
+        "hero": "clamp(2.5rem, 5vw, 4rem)",
+        "h1": "clamp(2rem, 4vw, 2.5rem)",
+        "h2": "clamp(1.5rem, 3vw, 2rem)",
+        "h3": "1.25rem",
+        "body": "1rem",
+        "small": "0.875rem"
+      },
+      "fontWeight": {
+        "normal": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700
+      },
+      "lineHeight": {
+        "tight": 1.2,
+        "normal": 1.5,
+        "relaxed": 1.75
+      }
+    },
+    
+    "spacing": {
+      "section": {
+        "paddingY": "clamp(4rem, 8vw, 7.5rem)"
+      },
+      "container": {
+        "maxWidth": "1280px",
+        "padding": "1.5rem"
+      },
+      "gap": {
+        "xs": "0.5rem",
+        "sm": "1rem",
+        "md": "1.5rem",
+        "lg": "2rem",
+        "xl": "3rem"
+      }
+    },
+    
+    "effects": {
+      "glassMorphism": {
+        "background": "rgba(255, 255, 255, 0.05)",
+        "backdropFilter": "blur(20px)",
+        "border": "1px solid rgba(255, 255, 255, 0.1)",
+        "borderRadius": "1rem"
+      },
+      "shadows": {
+        "card": "0 8px 32px rgba(0, 0, 0, 0.3)",
+        "cardHover": "0 12px 48px rgba(0, 0, 0, 0.4)"
+      },
+      "transitions": {
+        "default": "all 0.3s ease-in-out",
+        "fast": "all 0.2s ease-in-out"
+      },
+      "animations": {
+        "pulse": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "fadeIn": "fadeIn 0.6s ease-out",
+        "slideUp": "slideUp 0.6s ease-out"
+      }
+    },
+    
+    "components": {
+      "button": {
+        "primary": {
+          "background": "#2563eb",
+          "color": "#ffffff",
+          "padding": "0.75rem 1.5rem",
+          "borderRadius": "0.5rem",
+          "fontWeight": 500,
+          "hover": {
+            "background": "#1d4ed8",
+            "transform": "translateY(-2px)"
+          }
+        },
+        "secondary": {
+          "background": "transparent",
+          "color": "#ffffff",
+          "border": "1px solid rgba(255, 255, 255, 0.2)",
+          "padding": "0.75rem 1.5rem",
+          "borderRadius": "0.5rem",
+          "fontWeight": 500,
+          "hover": {
+            "background": "rgba(255, 255, 255, 0.05)",
+            "border": "1px solid rgba(255, 255, 255, 0.3)"
+          }
+        }
+      },
+      "card": {
+        "glass": {
+          "background": "rgba(255, 255, 255, 0.05)",
+          "backdropFilter": "blur(20px)",
+          "border": "1px solid rgba(255, 255, 255, 0.1)",
+          "borderRadius": "1rem",
+          "padding": "1.5rem",
+          "hover": {
+            "background": "rgba(255, 255, 255, 0.08)",
+            "transform": "translateY(-4px)"
+          }
+        },
+        "pricing": {
+          "background": "rgba(255, 255, 255, 0.03)",
+          "backdropFilter": "blur(20px)",
+          "border": "1px solid rgba(255, 255, 255, 0.1)",
+          "borderRadius": "1rem",
+          "padding": "2rem"
+        },
+        "pricingHighlight": {
+          "background": "rgba(37, 99, 235, 0.1)",
+          "border": "2px solid #2563eb",
+          "borderRadius": "1rem",
+          "padding": "2rem"
+        }
+      },
+      "badge": {
+        "popular": {
+          "background": "#2563eb",
+          "color": "#ffffff",
+          "padding": "0.25rem 0.75rem",
+          "borderRadius": "9999px",
+          "fontSize": "0.75rem",
+          "fontWeight": 600
+        }
+      },
+      "statusIndicator": {
+        "up": {
+          "background": "#10b981",
+          "size": "0.5rem",
+          "borderRadius": "9999px",
+          "animation": "pulse 2s infinite"
+        },
+        "down": {
+          "background": "#ef4444",
+          "size": "0.5rem",
+          "borderRadius": "9999px",
+          "animation": "pulse 2s infinite"
+        }
+      }
+    },
+    
+    "icons": {
+      "library": "lucide-react",
+      "size": {
+        "sm": "1rem",
+        "md": "1.25rem",
+        "lg": "1.5rem",
+        "xl": "2rem"
+      },
+      "strokeWidth": 2
+    },
+    
+    "breakpoints": {
+      "mobile": "640px",
+      "tablet": "768px",
+      "laptop": "1024px",
+      "desktop": "1280px"
+    }
+  },
+  
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero Section",
+      "layout": "2-column",
+      "background": "#0e0e0f",
+      "gradient": "radial-gradient(circle at top right, rgba(37, 99, 235, 0.15), transparent 50%)",
+      "content": {
+        "column1": {
+          "title": "Simple, Fast, and Reliable API Monitoring",
+          "subtitle": "Get instant alerts, track uptime, and ensure your services never go down.",
+          "buttons": [
+            {
+              "text": "Start Free Trial",
+              "type": "primary",
+              "action": "signup"
+            },
+            {
+              "text": "View Documentation",
+              "type": "secondary",
+              "action": "docs"
+            }
+          ]
+        },
+        "column2": {
+          "components": [
+            {
+              "type": "animated-chart",
+              "description": "Glass card with animated line chart showing response times",
+              "style": "glass",
+              "animation": "line-chart-animation"
+            },
+            {
+              "type": "status-indicators",
+              "description": "Small glass card with UP/DOWN status badges with pulse animation",
+              "items": [
+                {"label": "API Gateway", "status": "up"},
+                {"label": "Database", "status": "up"},
+                {"label": "Cache Service", "status": "down"}
+              ]
+            }
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "features",
+      "name": "Main Features",
+      "layout": "3-column-grid",
+      "background": "#131314",
+      "cards": [
+        {
+          "icon": "check",
+          "title": "HTTP & HTTPS Endpoint Monitoring",
+          "description": "Monitor any HTTP or HTTPS endpoint with ease"
+        },
+        {
+          "icon": "zap",
+          "title": "Fast Checks with Low Latency",
+          "description": "Get results in milliseconds from multiple locations"
+        },
+        {
+          "icon": "shield",
+          "title": "Instant Alerts When Services Go Down",
+          "description": "Be notified immediately via email or webhook"
+        },
+        {
+          "icon": "activity",
+          "title": "Real-Time Performance Dashboard",
+          "description": "Monitor all your services in a single view"
+        },
+        {
+          "icon": "bar-chart-2",
+          "title": "Complete Availability History & Metrics",
+          "description": "Access detailed uptime reports and analytics"
+        },
+        {
+          "icon": "cloud",
+          "title": "Public Status Pages for Customers",
+          "description": "Keep your customers informed automatically"
+        }
+      ]
+    },
+    
+    {
+      "id": "benefits",
+      "name": "Benefits",
+      "layout": "2-column",
+      "background": "#0f0f10",
+      "content": {
+        "column1": {
+          "cards": [
+            {
+              "icon": "check-circle",
+              "title": "Reduce Downtime",
+              "description": "Catch issues before they impact your users"
+            },
+            {
+              "icon": "globe",
+              "title": "Know Before Your Customers",
+              "description": "Get alerted before failures are noticed"
+            },
+            {
+              "icon": "shield-check",
+              "title": "Teams & Permissions",
+              "description": "Manage access with role-based permissions"
+            },
+            {
+              "icon": "bell",
+              "title": "Email & Webhook Alerts",
+              "description": "Get notified through your preferred channel"
+            }
+          ]
+        },
+        "column2": {
+          "type": "dashboard-mockup",
+          "description": "Generate an image: Modern dark-themed dashboard showing API monitoring interface with graphs, metrics, and status indicators. Glass morphism style with blue accents."
+        }
+      }
+    },
+    
+    {
+      "id": "how-it-works",
+      "name": "How It Works",
+      "layout": "4-column-grid",
+      "background": "#131314",
+      "cards": [
+        {
+          "icon": "search",
+          "title": "Register Your Endpoints",
+          "description": "Add your endpoints in seconds",
+          "step": "01"
+        },
+        {
+          "icon": "timer",
+          "title": "Choose Check Frequency",
+          "description": "Set monitoring intervals from 30s to 5m",
+          "step": "02"
+        },
+        {
+          "icon": "satellite",
+          "title": "Get Instant Notifications",
+          "description": "Receive alerts at the first sign of trouble",
+          "step": "03"
+        },
+        {
+          "icon": "line-chart",
+          "title": "Track Response Times & Uptime",
+          "description": "View detailed performance graphs",
+          "step": "04"
+        }
+      ]
+    },
+    
+    {
+      "id": "pricing",
+      "name": "Pricing Plans",
+      "layout": "3-column-pricing",
+      "background": "#0d0d0d",
+      "plans": [
+        {
+          "name": "Starter",
+          "price": "$7",
+          "period": "month",
+          "highlight": false,
+          "features": [
+            {"icon": "check", "text": "25 monitors", "included": true},
+            {"icon": "user", "text": "1 team member", "included": true},
+            {"icon": "timer", "text": "Check every 5m", "included": true},
+            {"icon": "globe", "text": "1 Status page", "included": true},
+            {"icon": "x", "text": "SSL validation", "included": false},
+            {"icon": "x", "text": "SSL expire monitoring", "included": false},
+            {"icon": "database", "text": "Data retention: 3 months", "included": true},
+            {"icon": "mail", "text": "Email notifications", "included": true},
+            {"icon": "x", "text": "Webhook notifications", "included": false}
+          ],
+          "button": {
+            "text": "Get Started",
+            "type": "secondary"
+          }
+        },
+        {
+          "name": "Pro",
+          "price": "$25",
+          "period": "month",
+          "highlight": true,
+          "badge": "Most Popular",
+          "features": [
+            {"icon": "check", "text": "100 monitors", "included": true},
+            {"icon": "users", "text": "5 team members", "included": true},
+            {"icon": "timer", "text": "Check every 1m", "included": true},
+            {"icon": "globe", "text": "5 Status pages", "included": true},
+            {"icon": "check", "text": "SSL validation", "included": true},
+            {"icon": "check", "text": "SSL expire monitoring", "included": true},
+            {"icon": "database", "text": "Data retention: 6 months", "included": true},
+            {"icon": "mail", "text": "Email notifications", "included": true},
+            {"icon": "check", "text": "Webhook notifications", "included": true}
+          ],
+          "button": {
+            "text": "Subscribe to Pro",
+            "type": "primary"
+          }
+        },
+        {
+          "name": "Enterprise",
+          "price": "$50",
+          "period": "month",
+          "highlight": false,
+          "features": [
+            {"icon": "check", "text": "200 monitors", "included": true},
+            {"icon": "users", "text": "15 team members", "included": true},
+            {"icon": "timer", "text": "Check every 30s", "included": true},
+            {"icon": "globe", "text": "10 Status pages", "included": true},
+            {"icon": "check", "text": "SSL validation", "included": true},
+            {"icon": "check", "text": "SSL expire monitoring", "included": true},
+            {"icon": "database", "text": "Data retention: 12 months", "included": true},
+            {"icon": "mail", "text": "Email notifications", "included": true},
+            {"icon": "check", "text": "Webhook notifications", "included": true}
+          ],
+          "button": {
+            "text": "Contact Sales",
+            "type": "secondary"
+          }
+        }
+      ]
+    },
+    
+    {
+      "id": "status-pages",
+      "name": "Status Page Example",
+      "layout": "2-column",
+      "background": "#141415",
+      "content": {
+        "column1": {
+          "cards": [
+            {
+              "icon": "check-circle",
+              "title": "Branded Status Pages",
+              "description": "Custom status pages with your company branding"
+            },
+            {
+              "icon": "rss",
+              "title": "Transparency for Customers",
+              "description": "Keep clients and stakeholders informed"
+            },
+            {
+              "icon": "clock",
+              "title": "Accessible Uptime History",
+              "description": "Public historical data and incident reports"
+            }
+          ]
+        },
+        "column2": {
+          "type": "status-page-mockup",
+          "description": "Generate an image: Clean public status page showing service status indicators (all green), uptime percentages (99.9%), and incident timeline. Dark theme with glass morphism cards."
+        }
+      }
+    },
+    
+    {
+      "id": "integrations",
+      "name": "Integrations",
+      "layout": "3-column-grid",
+      "background": "#0e0e0f",
+      "cards": [
+        {
+          "icon": "mail",
+          "title": "Email Alerts",
+          "description": "Built-in email notifications",
+          "status": "available"
+        },
+        {
+          "icon": "webhook",
+          "title": "Custom Webhooks",
+          "description": "Integrate with any service",
+          "status": "available"
+        },
+        {
+          "icon": "slack",
+          "title": "Slack Integration",
+          "description": "Get alerts in Slack channels",
+          "status": "coming-soon"
+        },
+        {
+          "icon": "discord",
+          "title": "Discord Integration",
+          "description": "Notifications in Discord servers",
+          "status": "coming-soon"
+        },
+        {
+          "icon": "zap",
+          "title": "Zapier Automation",
+          "description": "Connect with 5000+ apps",
+          "status": "coming-soon"
+        }
+      ]
+    },
+    
+    {
+      "id": "security",
+      "name": "Security & Compliance",
+      "layout": "2-column",
+      "background": "#131314",
+      "content": {
+        "column1": {
+          "cards": [
+            {
+              "icon": "shield",
+              "title": "End-to-End Encryption",
+              "description": "All data encrypted in transit and at rest"
+            },
+            {
+              "icon": "lock",
+              "title": "Strong Authentication",
+              "description": "Secure access with 2FA and SSO support"
+            },
+            {
+              "icon": "file-check",
+              "title": "Auditable Logs",
+              "description": "Complete audit trail of all activities"
+            }
+          ]
+        },
+        "column2": {
+          "type": "security-illustration",
+          "description": "Generate an image: Abstract security illustration with shield, lock icons, and encrypted data streams. Dark background with blue glowing elements and glass morphism effects."
+        }
+      }
+    },
+    
+    {
+      "id": "cta-final",
+      "name": "Final Call to Action",
+      "layout": "centered-1-column",
+      "background": "#0c0c0c",
+      "gradient": "radial-gradient(circle at center, rgba(37, 99, 235, 0.2), transparent 70%)",
+      "content": {
+        "title": "Start Monitoring Your APIs Today",
+        "subtitle": "Join thousands of developers who trust SentraAPI",
+        "button": {
+          "text": "Create Free Account",
+          "type": "primary"
+        }
+      }
+    }
+  ],
+  
+  "imageGenerationRequirements": [
+    {
+      "id": "dashboard-mockup",
+      "section": "benefits",
+      "description": "Modern dark-themed API monitoring dashboard with glass morphism cards showing: line charts with response times (blue gradient), status indicators (green/red), uptime percentages, and alert notifications. Background: #131314. Accent color: #2563eb. Include subtle grid overlay.",
+      "style": "realistic UI mockup, glass morphism, dark theme"
+    },
+    {
+      "id": "status-page-mockup",
+      "section": "status-pages",
+      "description": "Clean public status page mockup showing: service names with green checkmarks, 99.9% uptime badges, incident timeline with dates, and subscribe button. Glass morphism cards on dark background #141415. Professional and trustworthy appearance.",
+      "style": "realistic UI mockup, glass morphism, dark theme"
+    },
+    {
+      "id": "security-illustration",
+      "section": "security",
+      "description": "Abstract security illustration featuring: glowing shield icon, lock symbols, encrypted data streams (binary code), and network connections. Dark background with blue (#2563eb) glowing effects. Modern, tech-focused style with glass morphism elements.",
+      "style": "abstract illustration, tech-focused, dark theme with blue accents"
+    }
+  ],
+  
+  "technicalRequirements": {
+    "framework": "React",
+    "styling": "Tailwind CSS + shadcn/ui",
+    "icons": "lucide-react",
+    "animations": "Framer Motion (optional) or CSS animations",
+    "responsive": true,
+    "accessibility": "WCAG 2.1 AA compliant",
+    "performance": "Optimized images, lazy loading, smooth animations"
+  }
+}

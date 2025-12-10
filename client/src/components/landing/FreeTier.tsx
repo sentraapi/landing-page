@@ -25,7 +25,11 @@ export function FreeTier() {
                 We believe in supporting developers and small projects. That's why every user gets a comprehensive free plan for their first organization automatically upon sign-up. No credit card required.
               </p>
               
-              <Button size="lg" className="bg-white text-black hover:bg-white/90 font-medium">
+              <Button 
+                size="lg" 
+                className="bg-white text-black hover:bg-white/90 font-medium"
+                onClick={() => window.location.href = 'https://app.sentraapi.com/register'}
+              >
                 Create Free Account
               </Button>
             </div>

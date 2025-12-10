@@ -44,12 +44,16 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white h-12 px-8 text-base shadow-lg shadow-primary/25">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-white h-12 px-8 text-base shadow-lg shadow-primary/25"
+              onClick={() => window.location.href = 'https://app.sentraapi.com/register'}
+            >
               Start Free Trial <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline" className="h-12 px-8 text-base border-white/10 hover:bg-white/5 hover:text-white">
+            {/* <Button size="lg" variant="outline" className="h-12 px-8 text-base border-white/10 hover:bg-white/5 hover:text-white">
               View Documentation
-            </Button>
+            </Button> */}
           </div>
           
           <div className="flex items-center gap-6 text-sm text-muted-foreground pt-4">

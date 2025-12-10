@@ -23,9 +23,9 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Resources</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">Documentation</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">API Reference</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li>
+              {/* <li><a href="#" className="hover:text-primary transition-colors">Documentation</a></li> */}
+              {/* <li><a href="#" className="hover:text-primary transition-colors">API Reference</a></li> */}
+              {/* <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li> */}
               <li><a href="#" className="hover:text-primary transition-colors">Status</a></li>
             </ul>
           </div>
@@ -33,15 +33,15 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Cookie Policy</a></li>
+              <li><a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a></li>
+              <li><a href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</a></li>
+              <li><a href="/cookie-policy" className="hover:text-primary transition-colors">Cookie Policy</a></li>
             </ul>
           </div>
         </div>
         
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>© 2024 SentraAPI. All rights reserved.</p>
+          <p>© 2025 SentraAPI. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Twitter</a>
             <a href="#" className="hover:text-white transition-colors">GitHub</a>

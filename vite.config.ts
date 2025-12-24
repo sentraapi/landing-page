@@ -39,6 +39,26 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Separate vendor chunks for better caching
+          'react-vendor': ['react', 'react-dom', 'react/jsx-runtime'],
+          'router': ['wouter'],
+          'query': ['@tanstack/react-query'],
+          'icons': ['lucide-react'],
+        },
+      },
+    },
+    // Enable CSS code splitting
+    cssCodeSplit: true,
+    // Optimize chunk size
+    chunkSizeWarningLimit: 1000,
+    // Enable minification (esbuild is faster than terser)
+    minify: 'esbuild',
+    target: 'esnext',
+    // Source maps only for development
+    sourcemap: false,
   },
   server: {
     host: "0.0.0.0",

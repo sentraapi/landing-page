@@ -1,9 +1,5 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { ChevronDown } from "lucide-react";
+import { useState } from "react";
 
 const faqs = [
   {
@@ -32,6 +28,43 @@ const faqs = [
   }
 ];
 
+// Lightweight accordion component to replace Radix UI
+function AccordionItem({ question, answer, index }: { question: string; answer: string; index: number }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="border border-white/10 bg-white/5 rounded-lg px-6 transition-colors data-[state=open]:bg-white/10">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full text-left text-lg font-medium py-6 flex items-center justify-between gap-4"
+        aria-expanded={isOpen}
+        aria-controls={`faq-answer-${index}`}
+        id={`faq-question-${index}`}
+      >
+        <span>{question}</span>
+        <ChevronDown
+          className={`h-5 w-5 text-muted-foreground transition-transform duration-200 flex-shrink-0 ${
+            isOpen ? 'rotate-180' : ''
+          }`}
+          aria-hidden="true"
+        />
+      </button>
+      <div
+        id={`faq-answer-${index}`}
+        role="region"
+        aria-labelledby={`faq-question-${index}`}
+        className={`overflow-hidden transition-all duration-200 ease-in-out ${
+          isOpen ? 'max-h-96 pb-6' : 'max-h-0'
+        }`}
+      >
+        <p className="text-muted-foreground leading-relaxed text-base">
+          {answer}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 export function FAQ() {
   return (
     <section className="py-24 bg-secondary/30">
@@ -43,22 +76,16 @@ export function FAQ() {
           </p>
         </div>
 
-        <Accordion type="single" collapsible className="w-full space-y-4">
+        <div className="w-full space-y-4" role="list">
           {faqs.map((faq, index) => (
-            <AccordionItem 
-              key={index} 
-              value={`item-${index}`}
-              className="border border-white/10 bg-white/5 rounded-lg px-6 data-[state=open]:bg-white/10 transition-colors"
-            >
-              <AccordionTrigger className="text-left text-lg font-medium hover:no-underline py-6">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed pb-6 text-base">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
+            <AccordionItem
+              key={index}
+              question={faq.question}
+              answer={faq.answer}
+              index={index}
+            />
           ))}
-        </Accordion>
+        </div>
       </div>
     </section>
   );

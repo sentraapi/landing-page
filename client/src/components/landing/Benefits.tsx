@@ -58,14 +58,18 @@ export function Benefits() {
           <div className="relative">
             {/* Image Container with Glow */}
             <div className="absolute inset-0 bg-primary/20 blur-[100px] rounded-full pointer-events-none" />
-            
+
             <div className="relative rounded-xl overflow-hidden border border-white/10 shadow-2xl shadow-black/50 group">
-               <img 
-                 src={dashboardImg} 
-                 alt="SentraAPI Dashboard" 
+               <img
+                 src={dashboardImg}
+                 alt="SentraAPI Dashboard showing real-time API monitoring with uptime statistics and response time graphs"
                  className="w-full h-auto transform transition-transform duration-700 group-hover:scale-105"
+                 loading="lazy"
+                 decoding="async"
+                 width="1276"
+                 height="884"
                />
-               
+
                {/* Overlay Gradient */}
                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent pointer-events-none" />
             </div>

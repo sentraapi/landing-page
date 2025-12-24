@@ -22,7 +22,7 @@ const data: DataPoint[] = [
 function LightweightAreaChart({ data }: { data: DataPoint[] }) {
   const maxMs = Math.max(...data.map((d: DataPoint) => d.ms));
   const minMs = Math.min(...data.map((d: DataPoint) => d.ms));
-  const width = 100;
+  const width = 500;
   const height = 100;
   const padding = 5;
 
@@ -36,7 +36,7 @@ function LightweightAreaChart({ data }: { data: DataPoint[] }) {
 
   return (
     <svg viewBox={`0 0 ${width} ${height}`} className="w-full h-[200px]" aria-label="API Response Time Chart">
-      <defs>
+      <defs className="w-full">
         <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0.3" />
           <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0" />
@@ -44,7 +44,7 @@ function LightweightAreaChart({ data }: { data: DataPoint[] }) {
       </defs>
 
       {/* Area fill */}
-      <path d={areaPath} fill="url(#areaGradient)" />
+      <path d={areaPath} fill="url(#areaGradient)" className="w-full" />
 
       {/* Line */}
       <polyline
@@ -54,6 +54,7 @@ function LightweightAreaChart({ data }: { data: DataPoint[] }) {
         strokeWidth="0.5"
         strokeLinecap="round"
         strokeLinejoin="round"
+        className="w-full"
       />
 
       {/* X-axis labels */}
@@ -100,7 +101,7 @@ export function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            v2.0 is now live
+            v0.1 is now live
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1]">
@@ -130,7 +131,7 @@ export function Hero() {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="h-4 w-4 text-primary" aria-hidden="true" />
-              <span>14-day free trial</span>
+              <span>Free trial forever</span>
             </div>
           </div>
         </div>
@@ -156,7 +157,7 @@ export function Hero() {
 
             {/* Floating Status Cards */}
             <div
-              className="absolute -right-4 top-4 glass p-4 rounded-xl border border-white/10 shadow-xl hidden sm:block animate-fade-in-delayed"
+              className="absolute right-4 top-20 glass p-4 rounded-xl border border-white/10 shadow-xl hidden sm:block animate-fade-in-delayed"
               style={{ animation: 'fadeInDelayed 0.5s ease-out 0.5s forwards', opacity: 0 }}
             >
               <div className="space-y-3">

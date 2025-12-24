@@ -4,7 +4,7 @@ import { useState } from "react";
 const faqs = [
   {
     question: "How does the Free Plan for the first organization work?",
-    answer: "When you create your account, your first organization is automatically enrolled in our Free Forever plan. This includes 5 monitors, 10-minute check intervals, and 1 month of data retention. It's perfect for personal projects or testing the platform."
+    answer: "When you create your account, your first organization is automatically enrolled in our Free Forever plan. This includes 5 monitors, 15-minute check intervals, and 1 month of data retention. It's perfect for personal projects or testing the platform."
   },
   {
     question: "What counts as a 'monitor'?",
@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "Can I upgrade my free organization later?",
-    answer: "Absolutely. You can upgrade your organization to a paid plan at any time to unlock more monitors, faster check intervals (down to 30s), notifications, and longer data retention."
+    answer: "Absolutely. You can upgrade your organization to a paid plan at any time to unlock more monitors, faster check intervals (down to 1m), notifications, and longer data retention."
   },
   {
     question: "How do notifications work?",

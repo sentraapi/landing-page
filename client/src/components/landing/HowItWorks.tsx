@@ -11,7 +11,7 @@ const steps = [
     icon: Timer,
     step: "02",
     title: "Set Frequency",
-    description: "Choose check intervals from 30 seconds to 5 minutes based on your needs."
+    description: "Choose check intervals from 1 minute to 30 minutes based on your needs."
   },
   {
     icon: Satellite,

@@ -59,7 +59,7 @@ export function FreeTier() {
                   <div className="p-1 rounded-full bg-primary/20 text-primary">
                     <Check size={14} />
                   </div>
-                  <span className="text-sm">10-minute Checks</span>
+                  <span className="text-sm">15-minute Checks</span>
                 </div>
                 
                 <div className="flex items-center gap-3">

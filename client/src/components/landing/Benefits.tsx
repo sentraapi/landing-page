@@ -1,5 +1,5 @@
 import { CheckCircle, Globe, ShieldCheck, Bell } from "lucide-react";
-import dashboardImg from "@assets/generated_images/dark_api_monitoring_dashboard_ui_mockup_with_glassmorphism_effects.png";
+import dashboardImg from "@assets/generated_images/dashboard.png";
 
 const benefits = [
   {

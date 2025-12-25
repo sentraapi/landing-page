@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
-import { Activity } from "lucide-react";
+import { ScanHeart } from "lucide-react";
 
 export function Navbar() {
   return (
@@ -8,7 +7,7 @@ export function Navbar() {
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="p-2 bg-primary/10 rounded-lg">
-            <Activity className="h-6 w-6 text-primary" />
+            <ScanHeart className="h-6 w-6 text-primary" />
           </div>
           <span className="text-xl font-bold tracking-tight">SentraAPI</span>
         </div>

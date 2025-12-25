@@ -22,7 +22,7 @@ export function Navbar() {
           <Button
             variant="ghost"
             className="hidden sm:flex hover:bg-white/5"
-            onClick={() => window.location.href = 'https://app.sentraapi.com/login'}
+            onClick={() => window.location.href = 'https://app.sentraapi.com'}
           >
             Log in
           </Button>

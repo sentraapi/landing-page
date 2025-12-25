@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 const plans = [
   {
     name: "Starter",
-    price: "$7",
+    price: "$5",
     period: "month",
     description: "Perfect for side projects",
     features: [
@@ -23,7 +23,7 @@ const plans = [
   },
   {
     name: "Pro",
-    price: "$25",
+    price: "$20",
     period: "month",
     description: "For growing startups",
     features: [
@@ -42,7 +42,7 @@ const plans = [
   },
   {
     name: "Enterprise",
-    price: "$50",
+    price: "$40",
     period: "month",
     description: "For serious businesses",
     features: [

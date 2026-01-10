@@ -116,7 +116,7 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-white h-12 px-8 text-base shadow-lg shadow-primary/25"
+              className="bg-primary hover:bg-primary/90 text-black h-12 px-8 text-base shadow-lg shadow-primary/25"
               onClick={() => window.location.href = 'https://app.sentraapi.com/register'}
               aria-label="Start free trial of SentraAPI"
             >

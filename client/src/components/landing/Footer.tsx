@@ -13,19 +13,15 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Product</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">Features</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Pricing</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Integrations</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Changelog</a></li>
+              <li><a href="#features" className="hover:text-primary transition-colors">Features</a></li>
+              <li><a href="#pricing" className="hover:text-primary transition-colors">Pricing</a></li>
+              <li><a href="#about" className="hover:text-primary transition-colors">About</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Resources</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              {/* <li><a href="#" className="hover:text-primary transition-colors">Documentation</a></li> */}
-              {/* <li><a href="#" className="hover:text-primary transition-colors">API Reference</a></li> */}
-              {/* <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li> */}
               <li><a href="#" className="hover:text-primary transition-colors">Status</a></li>
             </ul>
           </div>
@@ -43,9 +39,8 @@ export function Footer() {
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <p>© 2025 SentraAPI. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Twitter</a>
-            <a href="#" className="hover:text-white transition-colors">GitHub</a>
-            <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
+            <a href="https://github.com/sentraapi/landing-page" className="hover:text-white transition-colors">GitHub</a>
+            <a href="https://discord.com/invite/DBRhVqmukZ" className="hover:text-white transition-colors">Discord</a>
           </div>
         </div>
       </div>

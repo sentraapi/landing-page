@@ -83,7 +83,7 @@ export function Pricing() {
               )}
             >
               {plan.highlight && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
                   {plan.badge}
                 </div>
               )}
@@ -119,7 +119,7 @@ export function Pricing() {
                 className={cn(
                   "w-full",
                   plan.highlight 
-                    ? "bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/25" 
+                    ? "bg-primary hover:bg-primary/90 text-black shadow-lg shadow-primary/25" 
                     : "bg-white/10 hover:bg-white/20 text-white"
                 )}
               >

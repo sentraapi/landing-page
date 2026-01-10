@@ -27,7 +27,7 @@ export function Navbar() {
             Log in
           </Button>
           <Button
-            className="bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20"
+            className="bg-primary hover:bg-primary/90 text-black shadow-lg shadow-primary/20"
             onClick={() => window.location.href = 'https://app.sentraapi.com/register'}
           >
             Start Free Trial
